@@ -1,7 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
@@ -24,7 +27,7 @@
 <section class="innerbanner" role="banner">
     <header id="header">
         <!-- navigation section  -->
-        <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio"></a>
+        <div class="header-content clearfix"><a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio"></a>
             <nav class="navigation" role="navigation">
                 <ul class="primary-nav">
                     <li><a href="index.html">Главная</a></li>
@@ -34,15 +37,14 @@
                     <li><a href="pricing.html">Стоимость</a></li>
                 </ul>
             </nav>
-            <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+            <a href="#" class="nav-toggle">Menu<span></span></a></div>
         <!-- navigation section  -->
     </header>
-
     <!-- banner text -->
     <div class="container">
         <div class="col-md-10 col-md-offset-1">
             <div class="innerbanner-text text-center">
-                <p>About me</p>
+                <p>Контакты</p>
                 <!-- banner text -->
             </div>
         </div>
@@ -52,31 +54,47 @@
 <!-- description text section -->
 <section id="inner-description" class="section inner-description">
     <div class="container">
-        <div class="col-md-10 col-md-offset-1 text-center"> <img src="images/designer-pic.jpg" alt="Mafolio">
-            <h1>Johnathan Doe</h1>
-            <p>UX Designer/ Developer</p>
-        </div>
-        <div class="col-md-10 col-md-offset-1 space">
-            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet avida at eget metus.Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet avida at eget metus.</p>
-            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet avida at eget metus.Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet avida at eget metus.</p>
+        <div class="col-md-10 col-md-offset-1 text-center">
+            <p>Автономная некоммерческая организация дополнительного образования «Институт психологии и специального
+                образования» (АНО ДО «ИПиСО») образована в сентябре 2017 г., о чем свидетельствует запись в Едином
+                государственном реестре юридических лиц.</p><br>
+            <p>Учредители организации:<br>
+                Староверова Марина Семеновна<br>
+                Захарова Анастасия ВладимировнаC<br>
+            </p>
+            <p><br>Директор: Староверова Марина Семеновна<br></p>
         </div>
     </div>
 </section>
 <!-- description text section -->
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBFFhNBDgK5bvpeAu7_H63RUMFqL5D5z-g'></script>
+<div style='overflow:hidden;height:358px;width:100%;'>
+    <div id='gmap_canvas' style='height:358px;width:100%;'></div>
+    <style>#gmap_canvas img {
+        max-width: none !important;
+        background: none !important
+    }</style>
+</div>
+<a href='http://maps-generator.com/ru'>maps-generator</a>
+<script type='text/javascript'
+        src='https://embedmaps.com/google-maps-authorization/script.js?id=9b88f468674fbce3152e75e17ec6cd468cf99521'></script>
+<script type='text/javascript'>function init_map() {
+    var myOptions = {
+        zoom: 12,
+        center: new google.maps.LatLng(55.6692857, 37.62594469999999),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(55.6692857, 37.62594469999999)});
+    infowindow = new google.maps.InfoWindow({content: '<strong>АНО ДО «ИПиСО»</strong><br>шоссе Варшавское, дом 65 КОРПУС 1<br>115230 Москва<br>'});
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
+    });
+    infowindow.open(map, marker);
+}
 
-<!-- hire me section -->
-<section id="hireme" class="section hireme">
-    <div class="container">
-        <div class="col-md-8 col-md-offset-2 text-center">
-            <h3>Need something specific?</h3>
-            <p>We are currently crafting new products but would love to hear from you.</p>
-            <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn btn-large">Hire me</a> </div>
-    </div>
-</section>
-<!-- hire me section -->
+google.maps.event.addDomListener(window, 'load', init_map);</script>
 <!-- footer -->
-
 <footer class="section footer">
     <div class="footer-bottom">
         <div class="container">
@@ -106,6 +124,7 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/retina.min.js"></script>
 <script src="js/modernizr.js"></script>
+<script src="js/jquery.contact.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
