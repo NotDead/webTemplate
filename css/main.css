@@ -145,12 +145,15 @@ ul li {
 }
 .navigation li {
 	display: inline-block;
+	max-width: 200px;
+	text-align: center;
+	vertical-align: top;
+	padding: 0 5px;
 }
 .navigation a {
 	color: rgba(255, 255, 255, 0.75);
 	font-size: 13px;
 	font-weight: 400;
-	margin-left: 40px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
@@ -292,6 +295,10 @@ ul li {
 	-ms-transform: translateY(0) rotate(-45deg);
 	-webkit-transform: translateY(0) rotate(-45deg);
 	transform: translateY(0) rotate(-45deg);
+}
+
+.header-text {
+	color: #ffffff;
 }
 /* ------------------------------------------------------------------------------
 	Banner
