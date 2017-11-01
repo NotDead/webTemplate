@@ -169,7 +169,7 @@ ul li {
 
 .navigation li {
     display: inline-block;
-    max-width: 200px;
+    /*max-width: 200px;*/
     text-align: center;
     vertical-align: top;
     padding: 0 5px;
