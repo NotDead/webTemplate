@@ -142,7 +142,7 @@ ul li {
 }
 
 #header.fixed {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(101, 52, 156, 0.8);
 }
 
 #header.fixed .header-content {
@@ -715,4 +715,16 @@ Work animation
     color: #5ed07b;
     font-size: 17px;
     font-weight: 700;
+}
+
+/*--------------
+About US
+---------------*/
+
+.header-with-tab {
+    text-indent: 3%;
+}
+
+.name-contacts {
+    text-indent: 4%;
 }
